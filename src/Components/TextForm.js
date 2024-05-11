@@ -1,5 +1,9 @@
 import React, { useState } from "react";
+<<<<<<< HEAD
 import "../App.css";
+=======
+
+>>>>>>> 50019f65ea74567202f93c79ba2aaa798924b0a4
 export default function TextForm(props) {
   document.title = "TextUtils | Home";
   const handleUpClick = () => {
@@ -21,7 +25,11 @@ export default function TextForm(props) {
     setText(event.target.value);
   };
   const [text, setText] = useState("");
+<<<<<<< HEAD
   const copyText = () => {
+=======
+  const copyText = () =>{
+>>>>>>> 50019f65ea74567202f93c79ba2aaa798924b0a4
     navigator.clipboard.writeText(text);
     // document.getSelection().removeAllRanges();
     props.showAlert("Text copied", "success");
@@ -44,10 +52,15 @@ export default function TextForm(props) {
             onChange={handleOnChange}
             value={text}
             style={{
+<<<<<<< HEAD
               backgroundColor: props.mode === "light" ? "#e1e1e1" : "black",
               color: props.mode === "dark" ? "white" : "black",
               border: "1px solid black",
               height: "50vh",
+=======
+              backgroundColor: props.mode === "light" ? "white" : "black",
+              color: props.mode === "dark" ? "white" : "black",
+>>>>>>> 50019f65ea74567202f93c79ba2aaa798924b0a4
             }}
           ></textarea>
         </div>
@@ -87,6 +100,10 @@ export default function TextForm(props) {
         <h1>Your text summary</h1>
 
         <p>
+<<<<<<< HEAD
+=======
+          
+>>>>>>> 50019f65ea74567202f93c79ba2aaa798924b0a4
           {
             text.split(/\s+/).filter((element) => {
               return element.length !== 0;
@@ -94,7 +111,15 @@ export default function TextForm(props) {
           }{" "}
           words & {text.length} characters
         </p>
+<<<<<<< HEAD
         <p>{0.008 * p} minutes to read</p>
+=======
+        <p>
+          {0.008 *
+            p}{" "}
+          minutes to read
+        </p>
+>>>>>>> 50019f65ea74567202f93c79ba2aaa798924b0a4
         <h2>Preview</h2>
         <p>{text.length > 0 ? text : "Nothing to preview"}</p>
       </div>
