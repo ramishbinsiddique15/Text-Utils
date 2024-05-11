@@ -1,11 +1,16 @@
 import React from "react";
 export default function About(props) {
-    
+  document.title = "TextUtils | About";
   return (
-    <div className="container"  >
-      <h1 className="my-3" style={{color: props.mode === 'light' ? 'black' :  'white'}}>About Us</h1>
-      <div className="accordion" id="accordionExample" >
-        <div className="accordion-item" >
+    <div className="container">
+      <h1
+        className="my-3"
+        style={{ color: props.mode === "light" ? "black" : "white" }}
+      >
+        About Us
+      </h1>
+      <div className="accordion" id="accordionExample">
+        <div className="accordion-item">
           <h2 className="accordion-header">
             <button
               className="accordion-button"
@@ -14,9 +19,12 @@ export default function About(props) {
               data-bs-target="#collapseOne"
               aria-expanded="true"
               aria-controls="collapseOne"
-              style={{backgroundColor : props.mode === 'light' ? 'white': 'black' , color : props.mode === 'dark' ? 'white': 'black'}}
+              style={{
+                backgroundColor: props.mode === "light" ? "white" : "black",
+                color: props.mode === "dark" ? "white" : "black",
+              }}
             >
-              Accordion Item #1
+              Who are we?
             </button>
           </h2>
           <div
@@ -24,17 +32,16 @@ export default function About(props) {
             className="accordion-collapse collapse show"
             data-bs-parent="#accordionExample"
           >
-            <div className="accordion-body" 
-            style={{backgroundColor : props.mode === 'light' ? 'white': 'rgb(62, 67, 71)' , color : props.mode === 'dark' ? 'white': 'black'}}
+            <div
+              className="accordion-body"
+              style={{
+                backgroundColor:
+                  props.mode === "light" ? "white" : "rgb(62, 67, 71)",
+                color: props.mode === "dark" ? "white" : "black",
+              }}
             >
-              <strong>This is the first item's accordion body.</strong> It is
-              shown by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              <strong>We are a team of passionate developers.</strong> We are
+              dedicated to create the best user experiences.
             </div>
           </div>
         </div>
@@ -47,28 +54,29 @@ export default function About(props) {
               data-bs-target="#collapseTwo"
               aria-expanded="false"
               aria-controls="collapseTwo"
-              style={{backgroundColor : props.mode === 'light' ? 'white': 'black' , color : props.mode === 'dark' ? 'white': 'black'}}
+              style={{
+                backgroundColor: props.mode === "light" ? "white" : "black",
+                color: props.mode === "dark" ? "white" : "black",
+              }}
             >
-              Accordion Item #2
+              How it works?
             </button>
           </h2>
           <div
             id="collapseTwo"
             className="accordion-collapse collapse"
             data-bs-parent="#accordionExample"
-            
           >
-            <div className="accordion-body" 
-            style={{backgroundColor : props.mode === 'light' ? 'white': 'rgb(62, 67, 71)' , color : props.mode === 'dark' ? 'white': 'black'}}
+            <div
+              className="accordion-body"
+              style={{
+                backgroundColor:
+                  props.mode === "light" ? "white" : "rgb(62, 67, 71)",
+                color: props.mode === "dark" ? "white" : "black",
+              }}
             >
-              <strong>This is the second item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              Our platform uses advanced algorithms to provide you with the best
+              possible results.
             </div>
           </div>
         </div>
@@ -81,9 +89,12 @@ export default function About(props) {
               data-bs-target="#collapseThree"
               aria-expanded="false"
               aria-controls="collapseThree"
-              style={{backgroundColor : props.mode === 'light' ? 'white': 'black' , color : props.mode === 'dark' ? 'white': 'black'}}
+              style={{
+                backgroundColor: props.mode === "light" ? "white" : "black",
+                color: props.mode === "dark" ? "white" : "black",
+              }}
             >
-              Accordion Item #3
+              Contact Us
             </button>
           </h2>
           <div
@@ -91,17 +102,15 @@ export default function About(props) {
             className="accordion-collapse collapse"
             data-bs-parent="#accordionExample"
           >
-            <div className="accordion-body"
-            style={{backgroundColor : props.mode === 'light' ? 'white': 'rgb(62, 67, 71)' , color : props.mode === 'dark' ? 'white': 'black'}}
+            <div
+              className="accordion-body"
+              style={{
+                backgroundColor:
+                  props.mode === "light" ? "white" : "rgb(62, 67, 71)",
+                color: props.mode === "dark" ? "white" : "black",
+              }}
             >
-              <strong>This is the third item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              <strong> You can reach us at contact@ourwebsite.com</strong>
             </div>
           </div>
         </div>
