@@ -41,3 +41,18 @@
   background: #000;
   color: blue;
 }
+
+.form-check-input:checked {
+  background-color: black;
+  border-color: black;
+}
+.form-check-input {
+  color: black;
+}
+.form-check-input:focus , .form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(127, 127, 127, 0.25);
+  border: black;
+}
+.form-check-input:focus{
+  color: #000;
+}

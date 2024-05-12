@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import '../App.css'
 export default function Navbar(props) {
   return (
     <nav
@@ -45,7 +46,7 @@ export default function Navbar(props) {
               Search
             </button>
           </form>
-          <div className="form-check form-switch mx-3">
+          <div className="form-check form-switch mx-3" >
             <input
               className="form-check-input"
               type="checkbox"
